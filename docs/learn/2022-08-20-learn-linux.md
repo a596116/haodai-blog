@@ -5,7 +5,7 @@ subtitle: 從0開始學Linux
 author: HaoDai
 date: 2022-08-20
 useHeaderImage: true
-headerImage: https://progressbar.tw/uploads/ckeditor/pictures/1268/content_1.png
+headerImage: https://upload.cc/i1/2022/08/23/OQ4E1H.jpg
 headerMask: rgba(40, 57, 101, .4)
 tags: 
   - learn

@@ -17,11 +17,11 @@ export const zh: NavbarConfig = [
     link: "/links/",
     icon: "fa-satellite-dish"
   },
-  // {
-  //   text: "文檔",
-  //   link: "/docs/basic/intro.md",
-  //   icon: "ri-book-2-fill"
-  // },
+  {
+    text: "文檔",
+    link: "/zh/docs/basic/intro.md",
+    icon: "ri-book-2-fill"
+  },
   {
     text: '前端學習',
     icon: "ri-book-2-fill",

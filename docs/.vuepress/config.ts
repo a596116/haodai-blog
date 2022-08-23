@@ -47,7 +47,7 @@ export default defineUserConfig({
   // site-level locales config
   locales: {
     "/": {
-      lang: "zh-TW",
+      lang: "zh-tw",
       title: "浩呆博客",
       description: "積極向上的前端新手",
     },
@@ -124,7 +124,7 @@ export default defineUserConfig({
         subtitle: "所有標籤頁",
         bgImage: {
           path: "/img/pages/tags.jpg",
-          mask: "rgba(211, 136, 37, .1)"
+          mask: "rgba(211, 136, 37, .2)"
         }
       },
       links: {
@@ -140,10 +140,10 @@ export default defineUserConfig({
     themePlugins: {
       // github 評論
       giscus: {
-        repo: "a596116/blog",  // 必须，string，格式：user_name/repo_name
-        repoId: "R_kgDOH3APbA",  // 必须，string，在 Giscus 官网上生成
+        repo: "a596116/haodai-blog",  // 必须，string，格式：user_name/repo_name
+        repoId: "R_kgDOH3Zepg",  // 必须，string，在 Giscus 官网上生成
         category: "General",  // 必须，string
-        categoryId: "DIC_kwDOH3APbM4CQ9zQ",  // 必须，string，在 Giscus 官网上生成
+        categoryId: "DIC_kwDOH3Zeps4CQ_Kl",  // 必须，string，在 Giscus 官网上生成
       },
       katex: true,
       mermaid: true,
@@ -167,7 +167,7 @@ export default defineUserConfig({
     docsearchPlugin({
       appId: "9HDDA12RPH",
       apiKey: "e06283817c6bae01e6f397a0fa644567",
-      indexName: "blog",
+      indexName: "haodai-blog",
       locales: {
         "/": {
           placeholder: "搜尋",

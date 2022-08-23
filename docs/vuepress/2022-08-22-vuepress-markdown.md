@@ -10,9 +10,10 @@ headerMask: rgba(40, 57, 101, .2)
 giscus: false
 tags: 
   - vuepress
+  - learn
 ---
 
-快速上手markdown
+# 快速上手markdown
 <!-- more -->
 
 ## Heading (h2)
@@ -37,13 +38,13 @@ tags:
 
 ---
 
-## 链接
+## 鏈結
 
-### 内部链接
+### 内部鏈結
 
-网站内部的链接，将会被转换成 `<router-link>` 用于 SPA 导航。同时，站内的每一个文件夹下的 `README.md` 或者 `index.md` 文件都会被自动编译为 `index.html`，对应的链接将被视为 `/`。
+網站內部的鏈接，將會被轉換成 `<router-link>` 用於 SPA 導航。同時，站內的每一個文件夾下的 `README.md` 或者 `index.md` 文件都會被自動編譯為 `index.html`，對應的鏈接將被視為 `/`。
 
-以如下的文件结构为例：
+以如下的文件結構為例：
 
 ```
 .
@@ -58,36 +59,36 @@ tags:
    └─ four.md
 ```
 
-假设你现在在 `foo/one.md` 中：
+假設你現在在 `foo/one.md` 中：
 
 ``` md
-[Home](/) <!-- 跳转到根部的 README.md -->
-[foo](/foo/) <!-- 跳转到 foo 文件夹的 index.html -->
-[foo heading](./#heading) <!-- 跳转到 foo/index.html 的特定标题位置 -->
-[bar - three](../bar/three.md) <!-- 具体文件可以使用 .md 结尾（推荐） -->
+[Home](/) <!-- 跳轉到根部的 README.md -->
+[foo](/foo/) <!-- 跳轉到 foo 文件夾的 index.html -->
+[foo heading](./#heading) <!-- 跳轉到 foo/index.html 的特定標題位置 -->
+[bar - three](../bar/three.md) <!-- 具體文件可以使用 .md 結尾（推薦） -->
 [bar - four](../bar/four.html) <!-- 也可以用 .html -->
 ```
 
-### 链接的重定向
+### 鏈結的重定向
 
-VuePress 支持重定向到干净链接。如果一个链接 `/foo` 找不到，VuePress 会自行寻找一个可用的 `/foo/` 或 `/foo.html`。反过来，当 `/foo/` 或 `/foo.html` 中的一个找不到时，VuePress 也会尝试寻找另一个。
+VuePress 支持重定向到乾淨鏈接。如果一個鏈接 `/foo` 找不到，VuePress 會自行尋找一個可用的 `/foo/` 或 `/foo.html`。反過來，當 `/foo/` 或 `/foo.html` 中的一個找不到時，VuePress 也會嘗試尋找另一個。
 
 ::: tip 注意
-无论是否使用了 permalink 和 clean-urls 插件，你的相对路径都应该依赖于当前的文件结构来定义。在上面的例子中，即使你将 `/foo/one.md` 的路径设为了 `/foo/one/`，你依然应该通过 `./two.md` 来访问 `/foo/two.md`。
+無論是否使用了 permalink 和 clean-urls 插件，你的相對路徑都應該依賴於當前的文件結構來定義。在上面的例子中，即使你將 `/foo/one.md` 的路徑設為了 `/foo/one/`，你依然應該通過 `./two.md` 來訪問 `/foo/two.md`。
 :::
 
-### 外部链接
+### 外部鏈結
 
-外部的链接将会被自动地设置为  `target="_blank" rel="noopener noreferrer"`:
+外部的鏈接將會被自動地設置為  `target="_blank" rel="noopener noreferrer"`:
 
 - [vuejs.org](https://vuejs.org)
 - [VuePress on GitHub](https://github.com/vuejs/vuepress)
 
-你可以自定义通过配置 [config.markdown.externalLinks](https://vuepress.vuejs.org/zh/config/#markdown-externallinks) 来自定义外部链接的特性。
+你可以自定義通過配置 [config.markdown.externalLinks](https://vuepress.vuejs.org/zh/config/#markdown-externallinks) 來自定義外部鏈接的特性。
 
 ---
 
-## Inline Code
+## 行內程式碼
 
 `const a = 1`
 
@@ -99,7 +100,7 @@ VuePress 支持重定向到干净链接。如果一个链接 `/foo` 找不到，
 
 ---
 
-## Badges <Badge text="tip" /> <Badge text="warning" type="warning" /> <Badge text="danger" type="danger" /> <Badge text="tip middle" vertical="middle" />
+## 徽章 <Badge text="tip" /> <Badge text="warning" type="warning" /> <Badge text="danger" type="danger" /> <Badge text="tip middle" vertical="middle" />
 
 
 ::: details 代碼
@@ -113,32 +114,7 @@ VuePress 支持重定向到干净链接。如果一个链接 `/foo` 找不到，
 
 ---
 
-## Front Matter
-
-提供了对 [YAML front matter](https://jekyllrb.com/docs/frontmatter/) 开箱即用的支持:
-
-``` yaml
----
-layout: Post
-title: Markdown 语法示例
-subtitle: Markdown 语法示例
-author: HaoDai
-date: 2022-08-22
-useHeaderImage: false
-headerImage: /img/in-post/vuepress.jpeg
-headerMask: rgba(40, 57, 101, .4)
-tags: 
-  - vuepress
----
-```
-
-这些数据可以在当前 markdown 的正文，或者是任意的自定义或主题组件中使用。
-
-想了解更多，请移步官方文档 [Front Matter](https://vuepress.vuejs.org/zh/guide/frontmatter.html#%E5%85%B6%E4%BB%96%E6%A0%BC%E5%BC%8F%E7%9A%84-front-matter)。
-
----
-
-## Task List
+## 任務列表
 
 - [ ] Mercury
 - [x] Venus
@@ -160,7 +136,7 @@ tags:
 
 ---
 
-## Image (click to zoom in/out)
+## 圖片 (點擊 放大/縮小)
 
 ![](https://vuepress.vuejs.org/architecture.png)
 
@@ -170,13 +146,13 @@ tags:
 ```
 :::
 
-### Inline image
+### 行內圖片
 
 Not Bad.![](https://res.smzdm.com/images/emotions/138.png)
 
 ---
 
-## hr
+## 分隔線
 
 Below is a `<hr>`, I guess.
 
@@ -194,9 +170,9 @@ Above is a `<hr>`, I guess.
 
 ---
 
-## List
+## 列表
 
-### Unordered list
+### 無序列表
 
 + list item
 
@@ -224,7 +200,7 @@ Above is a `<hr>`, I guess.
 ```
 :::
 
-### Ordered list
+### 有序列表
 
 1. list item
 
@@ -242,9 +218,9 @@ Above is a `<hr>`, I guess.
 
 ---
 
-## Table
+## 表格
 
-### GitHub 风格的表格
+### GitHub 風格的表格
 
 ``` md
 | Tables        | Are           | Cool  |
@@ -264,7 +240,7 @@ Above is a `<hr>`, I guess.
 ```
 :::
 
-### Long Table
+### 長表格
 
 | Sun With Face | Grinning Face | Smiling Face  | Grinning Face With Big Eyes | Smiling Face With Smiling Eyes | Full Moon Face  | Grinning Face With Smiling Eyes | Face With Monocle  | Cowboy Hat Face | Thinking Face  | Face Vomiting |
 | ------------- |:-------------:| -----:| ------------- |:-------------:| -----:| ------------- |:-------------:| -----:|:-------------:| -----:|
@@ -274,26 +250,26 @@ Above is a `<hr>`, I guess.
 
 ---
 
-## Blockquote
+## 塊狀引文
 
-> 要么是酒，要么是女人，要么是神，家族，王，梦想，子女，力量，人如果不沉醉于某些东西估计都撑不下去吧，所有人都是某些东西的奴隶，就连那家伙... 
+> 要麼是酒，要麼是女人，要麼是神，家族，王，夢想，子女，力量，人如果不沈醉於某些東西估計都撐不下去吧，所有人都是某些東西的奴隸，就連那傢伙... 
   
-  *-- 凯尼?阿克曼 《进击的巨人》*
+  *-- 凱尼?阿克曼 《進擊的巨人》*
 
 ::: details 代碼
 ``` markdown
-> 要么是酒，要么是女人，要么是神，家族，王，梦想，子女，力量，人如果不沉醉于某些东西估计都撑不下去吧，所有人都是某些东西的奴隶，就连那家伙... 
+> 要麼是酒，要麼是女人，要麼是神，家族，王，夢想，子女，力量，人如果不沈醉於某些東西估計都撐不下去吧，所有人都是某些東西的奴隸，就連那傢伙... 
 ```
 :::
 
 ---
 
-## Code
+## 程式碼
 
-### Code Block
+### 代碼塊
 
 ``` js
-// 第 3 版规范的最终设计
+// 第 3 版規範的最終設計
 try {
   doSomething();
 } catch (e) {
@@ -313,7 +289,7 @@ try {
 ::: details 代碼
 ```` markdown
 ``` js
-// 第 3 版规范的最终设计
+// 第 3 版規範的最終設計
 try {
   doSomething();
 } catch (e) {
@@ -334,7 +310,7 @@ try {
 
 ---
 
-### Code Groups
+### 代碼群組
 
 <CodeGroup>
 <CodeGroupItem title="YARN" active>
@@ -378,7 +354,7 @@ npm install -D vuepress-theme-gungnir@next
 
 ---
 
-### 代码块中的行高亮
+### 代碼塊中的行高亮
 
 ``` js {4}
 export default {
@@ -404,11 +380,11 @@ export default {
 ````
 :::
 
-除了单行以外，你也可指定多行，行数区间，或是两者都指定。
+除了單行以外，你也可指定多行，行數區間，或是兩者都指定。
 
-- 行数区间: 例如 `{5-8}`, `{3-10}`, `{10-17}`
-- 多个单行: 例如 `{4,7,9}`
-- 行数区间与多个单行: 例如 `{4,7-13,16,23-27,40}`
+- 行數區間: 例如 `{5-8}`, `{3-10}`, `{10-17}`
+- 多個單行: 例如 `{4,7,9}`
+- 行數區間與多個單行: 例如 `{4,7-13,16,23-27,40}`
 
 ``` js{1,4,6-7}
 export default { // Highlighted
@@ -444,9 +420,9 @@ export default { // Highlighted
 
 ---
 
-### 行号
+### 行號
 
-你可以通过配置来为每个代码块显示行号：
+你可以通過配置來為每個代碼塊顯示行號：
 
 ``` js
 // .vuepress/config.js -> markdown
@@ -458,7 +434,7 @@ module.exports = {
 }
 ```
 
-## Charts
+## 圖表
 
 ### Chart.js
 
@@ -622,58 +598,58 @@ $$
 ```
 :::
 
-你可以在[这个列表](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json)找到所有可用的 Emoji。
+你可以在[這個列表](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json)找到所有可用的 Emoji。
 
 ---
 
-## 自定义容器 <Badge text="默认主题"/>
+## 自定義容器 <Badge text="默認主題"/>
 
-**输入**
+**輸入**
 
 ```md
 ::: tip
-这是一个提示
+這是一個提示
 :::
 
 ::: warning
-这是一个警告
+這是一個警告
 :::
 
 ::: danger
-这是一个危险警告
+這是一個危險警告
 :::
 
 ::: details
-这是一个详情块，在 IE / Edge 中不生效
+這是一個詳情塊，在 IE / Edge 中不生效
 :::
 ```
 
-**输出**
+**輸出**
 
 ::: tip
-这是一个提示
+這是一個提示
 :::
 
 ::: warning
-这是一个警告
+這是一個警告
 :::
 
 ::: danger
-这是一个危险警告
+這是一個危險警告
 :::
 
 ::: details
-这是一个详情块，在 IE / Edge 中不生效
+這是一個詳情塊，在 IE / Edge 中不生效
 :::
 
-你也可以自定义块中的标题：
+你也可以自定義塊中的標題：
 
 ````md
 ::: danger STOP
-危险区域，禁止通行
+危險區域，禁止通行
 :::
 
-::: details 点击查看代码
+::: details 點擊查看代碼
 ```js
 console.log('你好，VuePress！')
 ```
@@ -681,36 +657,36 @@ console.log('你好，VuePress！')
 ````
 
 ::: danger STOP
-危险区域，禁止通行
+危險區域，禁止通行
 :::
 
-::: details 点击查看代码
+::: details 點擊查看代碼
 ```js
 console.log('你好，VuePress！')
 ```
 :::
 
-**参考:**
+**參考:**
 
 - [vuepress-plugin-container](https://vuepress.github.io/plugins/container/)
 
 
 
-## 导入代码段 <Badge text="beta" type="warning"/>
+## 導入代碼段 <Badge text="beta" type="warning"/>
 
-你可以通过下述的语法导入已经存在的文件中的代码段：
+你可以通過下述的語法導入已經存在的文件中的代碼段：
 
 ``` md
 <<< @/filepath
 ```
 
-它也支持 [行高亮](#代码块中的行高亮)：
+它也支持 [行高亮](#代碼塊中的行高亮)：
 
 ``` md
 <<< @/filepath{highlightLines}
 ```
 
-**输入**
+**輸入**
 
 ```
 <<< @/blog/.vuepress/__tests__/snippet.js{2}
@@ -725,19 +701,19 @@ console.log('你好，VuePress！')
 <!--lint enable strong-marker-->
 
 ::: tip 注意
-由于代码段的导入将在 webpack 编译之前执行，因此你无法使用 webpack 中的路径别名，此处的 `@` 默认值是 `process.cwd()`。
+由於代碼段的導入將在 webpack 編譯之前執行，因此你無法使用 webpack 中的路徑別名，此處的 `@` 默認值是 `process.cwd()`。
 :::
 
 
-为了只导入对应部分的代码，你也可运用 [VS Code region](https://code.visualstudio.com/docs/editor/codebasics#_folding)。你可以在文件路径后方的 `#` 紧接着提供一个自定义的区域名称（预设为 `snippet` ）
+為了只導入對應部分的代碼，你也可運用 [VS Code region](https://code.visualstudio.com/docs/editor/codebasics#_folding)。你可以在文件路徑後方的 `#` 緊接著提供一個自定義的區域名稱（預設為 `snippet` ）
 
-**输入**
+**輸入**
 
 ``` md
 <<< @/blog/.vuepress/__tests__/snippet-with-region.js#snippet{1}
 ```
 
-**代码文件**
+**代碼文件**
 
 <!--lint disable strong-marker-->
 
@@ -745,7 +721,7 @@ console.log('你好，VuePress！')
 
 <!--lint enable strong-marker-->
 
-**输出**
+**輸出**
 
 <!--lint disable strong-marker-->
 
@@ -755,16 +731,16 @@ console.log('你好，VuePress！')
 
 ---
 
-## 进阶配置
+## 進階配置
 
-VuePress 使用 [markdown-it](https://github.com/markdown-it/markdown-it) 来渲染 Markdown，上述大多数的拓展也都是通过自定义的插件实现的。想要进一步的话，你可以通过 `.vuepress/config.js` 的 `markdown` 选项，来对当前的 `markdown-it` 实例做一些自定义的配置：
+VuePress 使用 [markdown-it](https://github.com/markdown-it/markdown-it) 來渲染 Markdown，上述大多數的拓展也都是通過自定義的插件實現的。想要進一步的話，你可以通過 `.vuepress/config.js` 的 `markdown` 選項，來對當前的 `markdown-it` 實例做一些自定義的配置：
 
 ``` js
 module.exports = {
   markdown: {
-    // markdown-it-anchor 的选项
+    // markdown-it-anchor 的選項
     anchor: { permalink: false },
-    // markdown-it-toc 的选项
+    // markdown-it-toc 的選項
     toc: { includeLevel: [1, 2] },
     extendMarkdown: md => {
       // 使用更多的 markdown-it 插件!

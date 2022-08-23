@@ -1,49 +1,49 @@
 import type { SidebarConfig } from "vuepress-theme-gungnir"
 
 export const zh: SidebarConfig = {
-  "/docs/": [
+  "/zh/docs/": [
     {
       text: "基礎",
       children: [
-        "/docs/basic/intro.md",
-        "/docs/basic/installation.md",
-        "/docs/basic/config.md",
-        "/docs/basic/search.md",
-        "/docs/basic/content.md"
+        "/zh/docs/basic/intro.md",
+        "/zh/docs/basic/installation.md",
+        "/zh/docs/basic/config.md",
+        "/zh/docs/basic/search.md",
+        "/zh/docs/basic/content.md"
       ]
     },
     {
       text: "進階",
       children: [
-        "/docs/advanced/comment.md",
-        "/docs/advanced/analytics.md",
-        "/docs/advanced/reading-time.md",
-        "/docs/advanced/rss.md",
-        "/docs/advanced/hitokoto.md",
-        "/docs/advanced/icons.md"
+        "/zh/docs/advanced/comment.md",
+        "/zh/docs/advanced/analytics.md",
+        "/zh/docs/advanced/reading-time.md",
+        "/zh/docs/advanced/rss.md",
+        "/zh/docs/advanced/hitokoto.md",
+        "/zh/docs/advanced/icons.md"
       ]
     },
     {
       text: "Markdown 拓展語法",
       children: [
-        "/docs/md-enhance/math.md",
-        "/docs/md-enhance/chart.md",
-        "/docs/md-enhance/mermaid.md",
-        "/docs/md-enhance/others.md"
+        "/zh/docs/md-enhance/math.md",
+        "/zh/docs/md-enhance/chart.md",
+        "/zh/docs/md-enhance/mermaid.md",
+        "/zh/docs/md-enhance/others.md"
       ]
     },
     {
       text: "插件",
       children: [
-        "/docs/plugins/intro.md",
-        "/docs/plugins/giscus.md",
-        "/docs/plugins/chart.md",
-        "/docs/plugins/mermaid.md",
-        "/docs/plugins/katex.md",
-        "/docs/plugins/reading-time.md",
-        "/docs/plugins/baidu-tongji.md",
-        "/docs/plugins/md-plus.md",
-        "/docs/plugins/rss.md"
+        "/zh/docs/plugins/intro.md",
+        "/zh/docs/plugins/giscus.md",
+        "/zh/docs/plugins/chart.md",
+        "/zh/docs/plugins/mermaid.md",
+        "/zh/docs/plugins/katex.md",
+        "/zh/docs/plugins/reading-time.md",
+        "/zh/docs/plugins/baidu-tongji.md",
+        "/zh/docs/plugins/md-plus.md",
+        "/zh/docs/plugins/rss.md"
       ]
     }
   ],

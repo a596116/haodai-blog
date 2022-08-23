@@ -1,7 +1,7 @@
 import type { SidebarConfig } from "vuepress-theme-gungnir"
 
 export const en: SidebarConfig = {
-  "/docs/": [
+  "/docs/en/": [
     {
       text: "基礎",
       children: [
