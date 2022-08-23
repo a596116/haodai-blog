@@ -20,12 +20,19 @@
       <slot name="before" />
       <NavbarItems class="can-hide" @toggle-search="$emit('toggle-search')" />
       <slot name="after" />
-      <NavbarSearch />
+      <div class="bar">
+        <ToggleColorModeButton
+          v-if="themeLocale.colorModeSwitch"
+          class="color-mode"
+        />
+        <NavbarSearch />
+      </div>
     </div>
   </header>
 </template>
 
 <script setup lang="ts">
+import ToggleColorModeButton from "@theme/ToggleColorModeButton.vue";
 import NavbarItems from "@theme/NavbarItems.vue";
 import { usePageFrontmatter } from "@vuepress/client";
 import { computed, onBeforeUnmount, onMounted, ref } from "vue";
@@ -170,3 +177,15 @@ function getCssValue(el: HTMLElement | null, property: string): number {
   return Number.isNaN(num) ? 0 : num;
 }
 </script>
+
+<style scoped lang="scss">
+.bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .color-mode {
+    margin-left: 15px;
+    cursor: pointer;
+  }
+}
+</style>

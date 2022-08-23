@@ -2,14 +2,13 @@
   <div :title="themeLocale.toggleColorMode" @click="toggleColorMode">
     <VIcon v-show="currentMode === 'light'" name="fa-sun" />
     <VIcon v-show="currentMode === 'dark'" name="fa-moon" />
-    <VIcon v-show="currentMode === 'auto'" name="fa-magic" />
   </div>
 </template>
 
 <script setup lang="ts">
 import { useDarkMode, useThemeLocaleData } from "../composables";
 
-const modeOptions = ["light", "dark", "auto"];
+const modeOptions = ["light", "dark"];
 
 const themeLocale = useThemeLocaleData();
 const { currentMode } = useDarkMode();

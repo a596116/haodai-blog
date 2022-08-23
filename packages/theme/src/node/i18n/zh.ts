@@ -1,21 +1,21 @@
-import type { GungnirThemeI18n } from "../../shared";
+import type { GungnirThemeI18n } from "../../shared"
 
 const zh: GungnirThemeI18n = {
   // navbar
   navbarTitle: "$ cd /home/",
 
   // language selector
-  selectLanguageName: "简体中文",
-  selectLanguageText: "选择语言",
-  selectLanguageAriaLabel: "选择语言",
+  selectLanguageName: "繁體中文",
+  selectLanguageText: "選擇語言",
+  selectLanguageAriaLabel: "選擇語言",
 
   // page meta
-  editLinkText: "在 GitHub 上编辑此页",
+  editLinkText: "在 GitHub 上編輯此頁",
   lastUpdatedText: "上次更新",
-  contributorsText: "贡献者",
+  contributorsText: "貢獻者",
 
   // search
-  searchText: "搜索",
+  searchText: "搜尋",
 
   // custom containers
   info: "信息",
@@ -25,22 +25,22 @@ const zh: GungnirThemeI18n = {
 
   // 404 page
   notFound: [
-    "这里什么都没有",
-    "我们怎么到这来了？",
-    "这是一个 404 页面",
-    "看起来我们进入了错误的链接"
+    "這裡什麼都沒有",
+    "我們怎麼來到這了？",
+    "這是一個 404 頁面",
+    "看起來我們進入了錯誤的鏈結"
   ],
   backToHome: "$ cd /home/",
 
   // a11y
-  openInNewWindow: "在新窗口打开",
-  toggleColorMode: "切换颜色模式",
-  toggleSidebar: "切换侧边栏",
+  openInNewWindow: "在新窗口打開",
+  toggleColorMode: "切換顏色模式",
+  toggleSidebar: "切換側邊欄",
 
   // other pages
   pageText: {
-    tags: "标签",
-    links: "链接"
+    tags: "標籤",
+    links: "鏈結"
   },
 
   // "show all tags" button
@@ -51,15 +51,15 @@ const zh: GungnirThemeI18n = {
   postPrev: "上一篇",
 
   // home page pager
-  homeNext: "较新的文章",
-  homePrev: "较旧的文章",
+  homeNext: "較新的文章",
+  homePrev: "較舊的文章",
 
   // PWA-popup
-  pwaPopupMessage: "发现有新内容更新",
+  pwaPopupMessage: "發現有新内容更新",
   pwaPopupButtonText: "刷新",
 
   // header image
-  headerImageCredit: "图源"
-};
+  headerImageCredit: "圖源"
+}
 
-export { zh };
+export { zh }

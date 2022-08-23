@@ -128,8 +128,8 @@ export default defineUserConfig({
         }
       },
       links: {
-        subtitle:
-          "收藏網頁",
+        title: "鏈結",
+        subtitle: "收藏網頁",
         bgImage: {
           path: "/img/pages/links.jpg",
           mask: "rgba(64, 118, 190, 0.2)"
