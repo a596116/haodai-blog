@@ -73,7 +73,7 @@ export default defineUserConfig({
     locales: {
       "/": {
         navbar: navbar.zh,
-        sidebar: sidebar.en,
+        sidebar: sidebar.zh,
         ...i18n.zh,
         navbarTitle: "HaoDai",
       },

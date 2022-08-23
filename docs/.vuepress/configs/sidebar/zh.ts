@@ -1,57 +1,82 @@
 import type { SidebarConfig } from "vuepress-theme-gungnir"
 
 export const zh: SidebarConfig = {
-  "/zh/docs/": [
+  "/docs/": [
     {
-      text: "基础",
+      text: "基礎",
       children: [
-        "/zh/docs/basic/intro.md",
-        "/zh/docs/basic/installation.md",
-        "/zh/docs/basic/config.md",
-        "/zh/docs/basic/search.md",
-        "/zh/docs/basic/content.md"
+        "/docs/basic/intro.md",
+        "/docs/basic/installation.md",
+        "/docs/basic/config.md",
+        "/docs/basic/search.md",
+        "/docs/basic/content.md"
       ]
     },
     {
-      text: "进阶",
+      text: "進階",
       children: [
-        "/zh/docs/advanced/comment.md",
-        "/zh/docs/advanced/analytics.md",
-        "/zh/docs/advanced/reading-time.md",
-        "/zh/docs/advanced/rss.md",
-        "/zh/docs/advanced/hitokoto.md",
-        "/zh/docs/advanced/icons.md"
+        "/docs/advanced/comment.md",
+        "/docs/advanced/analytics.md",
+        "/docs/advanced/reading-time.md",
+        "/docs/advanced/rss.md",
+        "/docs/advanced/hitokoto.md",
+        "/docs/advanced/icons.md"
       ]
     },
     {
-      text: "Markdown 拓展语法",
+      text: "Markdown 拓展語法",
       children: [
-        "/zh/docs/md-enhance/math.md",
-        "/zh/docs/md-enhance/chart.md",
-        "/zh/docs/md-enhance/mermaid.md",
-        "/zh/docs/md-enhance/others.md"
-      ]
-    },
-    {
-      text: "拓展",
-      children: [
-        "/zh/docs/extension/resource.md",
-        "/zh/docs/extension/deploy.md"
+        "/docs/md-enhance/math.md",
+        "/docs/md-enhance/chart.md",
+        "/docs/md-enhance/mermaid.md",
+        "/docs/md-enhance/others.md"
       ]
     },
     {
       text: "插件",
       children: [
-        "/zh/docs/plugins/intro.md",
-        "/zh/docs/plugins/giscus.md",
-        "/zh/docs/plugins/chart.md",
-        "/zh/docs/plugins/mermaid.md",
-        "/zh/docs/plugins/katex.md",
-        "/zh/docs/plugins/reading-time.md",
-        "/zh/docs/plugins/baidu-tongji.md",
-        "/zh/docs/plugins/md-plus.md",
-        "/zh/docs/plugins/rss.md"
+        "/docs/plugins/intro.md",
+        "/docs/plugins/giscus.md",
+        "/docs/plugins/chart.md",
+        "/docs/plugins/mermaid.md",
+        "/docs/plugins/katex.md",
+        "/docs/plugins/reading-time.md",
+        "/docs/plugins/baidu-tongji.md",
+        "/docs/plugins/md-plus.md",
+        "/docs/plugins/rss.md"
       ]
     }
-  ]
+  ],
+  "/web/js/": [
+    {
+      text: "基礎",
+      children: [
+        "/web/js/basic/intro.md",
+        "/web/js/basic/about.md",
+      ]
+    }
+  ],
+  "/web/html/": [
+    {
+      text: "基礎",
+      children: [
+        "/web/html/basic/intro.md",
+      ]
+    },
+    {
+      text: "標籤",
+      children: [
+        "/web/html/tag/tag_text.md",
+      ]
+    }
+  ],
+  "/web/css/": [
+    {
+      text: "基礎",
+      children: [
+        "/web/css/basic/intro.md",
+        "/web/css/basic/about.md",
+      ]
+    }
+  ],
 }
