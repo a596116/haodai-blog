@@ -47,35 +47,35 @@ export const zh: SidebarConfig = {
       ]
     }
   ],
-  "/web/js/": [
+  "/posts/web/js/": [
     {
       text: "基礎",
       children: [
-        "/web/js/basic/intro.md",
-        "/web/js/basic/about.md",
+        "/posts/web/js/basic/intro.md",
+        "/posts/web/js/basic/about.md",
       ]
     }
   ],
-  "/web/html/": [
+  "/posts/web/html/": [
     {
       text: "基礎",
       children: [
-        "/web/html/basic/intro.md",
+        "/posts/web/html/basic/intro.md",
       ]
     },
     {
       text: "標籤",
       children: [
-        "/web/html/tag/tag_text.md",
+        "/posts/web/html/tag/tag_text.md",
       ]
     }
   ],
-  "/web/css/": [
+  "/posts/web/css/": [
     {
       text: "基礎",
       children: [
-        "/web/css/basic/intro.md",
-        "/web/css/basic/about.md",
+        "/posts/web/css/basic/intro.md",
+        "/posts/web/css/basic/about.md",
       ]
     }
   ],

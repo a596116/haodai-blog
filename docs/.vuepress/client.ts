@@ -1,6 +1,7 @@
 import { defineClientConfig } from "@vuepress/client"
 import { addIcons } from "oh-vue-icons"
 import {
+  CoAboutMe,
   CoGit,
   HiSolidHome,
   FaFortAwesome,
@@ -16,10 +17,15 @@ import {
   RiVuejsLine,
   FaJsSquare,
   CoHtml5,
-  IoLogoCss3
+  IoLogoCss3,
+  HiSolidMail,
+  BiPhoneFill,
+  BiLine,
+  BiGithub
 } from "oh-vue-icons/icons"
 
 addIcons(
+  CoAboutMe,
   BiInstagram,
   RiBilibiliLine,
   FaFortAwesome,
@@ -35,7 +41,11 @@ addIcons(
   RiSailboatLine,
   FaJsSquare,
   CoHtml5,
-  IoLogoCss3
+  IoLogoCss3,
+  HiSolidMail,
+  BiPhoneFill,
+  BiLine,
+  BiGithub
 )
 
 export default defineClientConfig({})

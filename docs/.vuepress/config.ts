@@ -3,6 +3,7 @@ import { webpackBundler } from "@vuepress/bundler-webpack"
 import { docsearchPlugin } from "@vuepress/plugin-docsearch"
 import { defineUserConfig } from "vuepress"
 import { gungnirTheme, i18n } from "vuepress-theme-gungnir"
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import { navbar, sidebar } from "./configs"
 
 const isProd = process.env.NODE_ENV === "production"
@@ -29,17 +30,17 @@ export default defineUserConfig({
         href: `/img/logo.png`
       }
     ],
-    // ["link", { rel: "manifest", href: "/manifest.webmanifest" }],
-    // ["meta", { name: "application-name", content: "Gungnir Theme" }],
-    // ["meta", { name: "apple-mobile-web-app-title", content: "Gungnir Theme" }],
-    // [
-    //     "meta",
-    //     { name: "apple-mobile-web-app-status-bar-style", content: "black" }
-    // ],
-    // [
-    //     "link",
-    //     { rel: "apple-touch-icon", href: `/img/logo/apple-touch-icon.png` }
-    // ],
+    ["link", { rel: "manifest", href: "/manifest.webmanifest" }],
+    ["meta", { name: "application-name", content: "HaoDai Blog" }],
+    ["meta", { name: "apple-mobile-web-app-title", content: "HaoDai Blog" }],
+    [
+      "meta",
+      { name: "apple-mobile-web-app-status-bar-style", content: "black" }
+    ],
+    [
+      "link",
+      { rel: "apple-touch-icon", href: `/img/logo.png` }
+    ],
     ["meta", { name: "theme-color", content: "#377bb5" }],
     ["meta", { name: "msapplication-TileColor", content: "#377bb5" }]
   ],
@@ -148,7 +149,7 @@ export default defineUserConfig({
       katex: true,
       mermaid: true,
       chartjs: true,
-      ga: "G-G3NHHHG8SQ",
+      ga: "G-L4L2PCVEHK",
       pwa: true,
       search: false
     },
@@ -211,6 +212,12 @@ export default defineUserConfig({
           }
         }
       }
-    })
+    }),
+    registerComponentsPlugin({
+      components: {
+        'Resume': '../../comp/Resume.vue',
+        'Skill': '../../comp/Skill.vue',
+      }
+    }),
   ]
 })

@@ -13,7 +13,7 @@ tags:
   - learn
 ---
 
-# 快速上手markdown
+快速上手markdown
 <!-- more -->
 
 ## Heading (h2)

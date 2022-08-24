@@ -17,31 +17,36 @@ export const zh: NavbarConfig = [
     link: "/links/",
     icon: "fa-satellite-dish"
   },
-  {
-    text: "文檔",
-    link: "/zh/docs/basic/intro.md",
-    icon: "ri-book-2-fill"
-  },
+  // {
+  //   text: "文檔",
+  //   link: "/zh/docs/basic/intro.md",
+  //   icon: "ri-book-2-fill"
+  // },
   {
     text: '前端學習',
     icon: "ri-book-2-fill",
     children: [
       {
         text: "HTML",
-        link: "/web/html/basic/intro.md",
+        link: "/posts/web/html/basic/intro.md",
         icon: "co-html5"
       },
       {
         text: "JavaScript",
-        link: "/web/js/basic/intro.md",
+        link: "/posts/web/js/basic/intro.md",
         icon: "fa-js-square"
       },
       {
         text: "CSS",
-        link: "/web/css/basic/intro.md",
+        link: "/posts/web/css/basic/intro.md",
         icon: "io-logo-css3"
       },
     ]
+  },
+  {
+    text: "介紹",
+    icon: "co-about-me",
+    link: "/posts/about/resume.md",
   },
   // {
   //   text: `v1.0.0`,
