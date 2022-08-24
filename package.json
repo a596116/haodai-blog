@@ -72,5 +72,8 @@
         "webpack"
       ]
     }
+  },
+  "dependencies": {
+    "@vuepress/plugin-register-components": "2.0.0-beta.49"
   }
 }

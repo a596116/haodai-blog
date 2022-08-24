@@ -8,6 +8,7 @@ importers:
       '@commitlint/config-conventional': ^17.0.2
       '@types/node': ^18.0.0
       '@types/webpack-env': ^1.17.0
+      '@vuepress/plugin-register-components': 2.0.0-beta.49
       bumpp: ^8.2.1
       concurrently: ^7.2.2
       conventional-changelog-cli: ^2.2.2
@@ -24,6 +25,8 @@ importers:
       tsconfig-vuepress: ^0.2.1
       typescript: ^4.7.4
       vite: ~2.9.12
+    dependencies:
+      '@vuepress/plugin-register-components': 2.0.0-beta.49
     devDependencies:
       '@commitlint/cli': 17.0.3
       '@commitlint/config-conventional': 17.0.3
@@ -2745,6 +2748,16 @@ packages:
       - supports-color
     dev: false
 
+  /@vuepress/plugin-register-components/2.0.0-beta.49:
+    resolution: {integrity: sha512-OYnsLazh5f3ldwdh/qT8rdVjqMEh7eOiGrwucGRvlUwuQ71CE51OUrK6qIOaGZ5gkwmamYcAwLF37bs5lyZ+oA==}
+    dependencies:
+      '@vuepress/core': 2.0.0-beta.49
+      '@vuepress/utils': 2.0.0-beta.49
+      chokidar: 3.5.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /@vuepress/plugin-theme-data/2.0.0-beta.49:
     resolution: {integrity: sha512-zwbnDKPOOljSz7nMQXCNefp2zpDlwRIX5RTej9JQlCdcPXyLkFfvDgIMVpKNx6/5/210tKxFsCpmjLR8i+DbgQ==}
     dependencies:
@@ -3873,8 +3886,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      is-text-path: 1.0.1
       JSONStream: 1.3.5
+      is-text-path: 1.0.1
       lodash: 4.17.21
       meow: 8.1.2
       split2: 3.2.2
