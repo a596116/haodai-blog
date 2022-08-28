@@ -151,7 +151,6 @@ export default defineUserConfig({
       chartjs: true,
       ga: "G-L4L2PCVEHK",
       pwa: true,
-      search: false
     },
     footer: `
                 &copy; <a href="https://github.com/a596116" target="_blank">HaoDai</a> 2022
@@ -165,54 +164,54 @@ export default defineUserConfig({
   },
 
   plugins: [
-    docsearchPlugin({
-      appId: "9HDDA12RPH",
-      apiKey: "e06283817c6bae01e6f397a0fa644567",
-      indexName: "haodai-blog",
-      locales: {
-        "/": {
-          placeholder: "搜尋",
-          translations: {
-            button: {
-              buttonText: "搜尋",
-              buttonAriaLabel: "搜尋"
-            },
-            modal: {
-              searchBox: {
-                resetButtonTitle: "清除查詢條件",
-                resetButtonAriaLabel: "清除查詢條件",
-                cancelButtonText: "取消",
-                cancelButtonAriaLabel: "取消"
-              },
-              startScreen: {
-                recentSearchesTitle: "搜索歷史",
-                noRecentSearchesText: "搜索歷史",
-                saveRecentSearchButtonTitle: "保存至搜索歷史",
-                removeRecentSearchButtonTitle: "從搜索歷史中移除",
-                favoriteSearchesTitle: "收藏",
-                removeFavoriteSearchButtonTitle: "從收藏中移除"
-              },
-              errorScreen: {
-                titleText: "無法獲取结果",
-                helpText: "你可能需要檢查你網路連接",
-              },
-              footer: {
-                selectText: "選擇",
-                navigateText: "切換",
-                closeText: "關閉",
-                searchByText: "搜索提供者"
-              },
-              noResultsScreen: {
-                noResultsText: "無法找到相關结果",
-                suggestedQueryText: "你可以嘗試查詢",
-                reportMissingResultsText: "你認為該查詢應該有结果？",
-                reportMissingResultsLinkText: "點擊反饋"
-              }
-            }
-          }
-        }
-      }
-    }),
+    // docsearchPlugin({
+    //   appId: "9HDDA12RPH",
+    //   apiKey: "e06283817c6bae01e6f397a0fa644567",
+    //   indexName: "haodai-blog",
+    //   locales: {
+    //     "/": {
+    //       placeholder: "搜尋",
+    //       translations: {
+    //         button: {
+    //           buttonText: "搜尋",
+    //           buttonAriaLabel: "搜尋"
+    //         },
+    //         modal: {
+    //           searchBox: {
+    //             resetButtonTitle: "清除查詢條件",
+    //             resetButtonAriaLabel: "清除查詢條件",
+    //             cancelButtonText: "取消",
+    //             cancelButtonAriaLabel: "取消"
+    //           },
+    //           startScreen: {
+    //             recentSearchesTitle: "搜索歷史",
+    //             noRecentSearchesText: "搜索歷史",
+    //             saveRecentSearchButtonTitle: "保存至搜索歷史",
+    //             removeRecentSearchButtonTitle: "從搜索歷史中移除",
+    //             favoriteSearchesTitle: "收藏",
+    //             removeFavoriteSearchButtonTitle: "從收藏中移除"
+    //           },
+    //           errorScreen: {
+    //             titleText: "無法獲取结果",
+    //             helpText: "你可能需要檢查你網路連接",
+    //           },
+    //           footer: {
+    //             selectText: "選擇",
+    //             navigateText: "切換",
+    //             closeText: "關閉",
+    //             searchByText: "搜索提供者"
+    //           },
+    //           noResultsScreen: {
+    //             noResultsText: "無法找到相關结果",
+    //             suggestedQueryText: "你可以嘗試查詢",
+    //             reportMissingResultsText: "你認為該查詢應該有结果？",
+    //             reportMissingResultsLinkText: "點擊反饋"
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // }),
     registerComponentsPlugin({
       components: {
         'Resume': '../../comp/Resume.vue',

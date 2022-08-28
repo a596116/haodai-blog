@@ -3,7 +3,7 @@
     <template #page>
       <PageHeader :page-info="pageInfo" />
 
-      <div class="link-section">
+      <div class="links-wrapper">
         <div
           v-for="(group, groupId) in frontmatter.links"
           :key="`link-group-${groupId}`"

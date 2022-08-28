@@ -26,7 +26,9 @@ hide: true
 
 [前端網頁和後台管理系統](https://github.com/a596116/web)
 
-[Node.js搭配egg開發後端](https://github.com/a596116/server)
+[Node.js搭配eggjs開發後端](https://github.com/a596116/server)
+
+[Node.js搭配nestjs開發後端](https://github.com/a596116/nestjs)
 
 [大學畢業專題網站](https://github.com/a596116/ir)
 

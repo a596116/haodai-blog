@@ -1,5 +1,5 @@
-@import '../_variables';
-@import '../_mixins';
+@import "../_variables";
+@import "../_mixins";
 
 .navbar {
   --navbar-line-height: calc(
@@ -38,8 +38,9 @@
     .navbar-items .navbar-item > a,
     .navbar-items .navbar-item span.title {
       color: white;
-      &:hover, &:focus {
-        color: rgba(white, .8);
+      &:hover,
+      &:focus {
+        color: rgba(white, 0.8);
       }
     }
   }
@@ -105,6 +106,9 @@
 }
 
 @media (max-width: $MQMobile) {
+  .site-name {
+    display: none;
+  }
   .navbar-items {
     .navbar-item {
       margin-left: 0;
@@ -122,9 +126,11 @@
       border-bottom: 1px solid var(--c-border);
       box-shadow: var(--box-shadow);
 
-      @include transition(transform .3s);
+      @include transition(transform 0.3s);
 
-      .navbar-item a, span.title, span.site-name {
+      .navbar-item a,
+      span.title,
+      span.site-name {
         color: var(--c-text) !important;
         &:hover,
         &:focus,
@@ -135,7 +141,7 @@
     }
 
     &.is-visible {
-      @include transform(translateY(100%))
+      @include transform(translateY(100%));
     }
   }
 

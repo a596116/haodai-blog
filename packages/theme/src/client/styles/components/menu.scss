@@ -1,7 +1,7 @@
 @use "sass:math";
 
-@import '../_variables';
-@import '../_mixins';
+@import "../_variables";
+@import "../_mixins";
 
 // Variables
 $menu-btn-size: 50px;
@@ -21,6 +21,13 @@ $delay: 400ms;
 $time: 250ms;
 $longer-time: $time * 2;
 
+.side-btn {
+  position: fixed;
+  // left: 50%;
+  margin: 15px;
+  z-index: 19;
+  display: none;
+}
 
 .menu-btn-container {
   position: fixed;
@@ -55,7 +62,7 @@ $longer-time: $time * 2;
 
     .menu-border {
       stroke: $menu-btn-primary-color;
-      opacity: .9;
+      opacity: 0.9;
       stroke-width: 1px;
       fill: none;
       transform-origin: 50% 50%;
@@ -93,9 +100,9 @@ $longer-time: $time * 2;
     height: 5px;
     background-color: white;
     border-radius: 50%;
-    $menu-btn-transition:
-      height $time, transform $time $longer-time, margin $time $longer-time,
-      background-color $longer-time, border-radius $longer-time;
+    $menu-btn-transition: height $time, transform $time $longer-time,
+      margin $time $longer-time, background-color $longer-time,
+      border-radius $longer-time;
 
     @include transition($menu-btn-transition);
     @include transform(translate(-50%, -50%));
@@ -132,15 +139,17 @@ $longer-time: $time * 2;
   transform-origin: $menu-btn-transform-origin;
   @include transition(all $time $bezier);
 
-  &:nth-child(2), &:nth-child(5) {
+  &:nth-child(2),
+  &:nth-child(5) {
     svg {
-      @include transform(rotate(-45deg))
+      @include transform(rotate(-45deg));
     }
   }
 
-  &:nth-child(3), &:nth-child(4) {
+  &:nth-child(3),
+  &:nth-child(4) {
     svg {
-      @include transform(rotate(-90deg))
+      @include transform(rotate(-90deg));
     }
   }
 
@@ -153,7 +162,8 @@ $longer-time: $time * 2;
 .menu-btn-container.open {
   .menu-btn span {
     width: 3px;
-    $menu-btn-open-transition: margin $time, transform $time, border-radius $time, height $time $longer-time;
+    $menu-btn-open-transition: margin $time, transform $time,
+      border-radius $time, height $time $longer-time;
     @include transition($menu-btn-open-transition);
 
     &:first-child,
@@ -174,7 +184,7 @@ $longer-time: $time * 2;
   }
 
   .menu-btn-child-wrapper {
-    @include transform(translateX((- $menu-btn-radius)));
+    @include transform(translateX((-$menu-btn-radius)));
     transition-delay: 0s;
   }
 
@@ -199,20 +209,28 @@ $longer-time: $time * 2;
     }
 
     &:nth-child(4) {
-      @include transform(translateY(- ($menu-btn-radius - 0.3 * $menu-btn-size)) rotate(90deg));
+      @include transform(
+        translateY(-($menu-btn-radius - 0.3 * $menu-btn-size)) rotate(90deg)
+      );
     }
 
     &:nth-child(5) {
-      @include transform(translateY(- ($menu-btn-radius - 0.3 * $menu-btn-size)) rotate(45deg));
+      @include transform(
+        translateY(-($menu-btn-radius - 0.3 * $menu-btn-size)) rotate(45deg)
+      );
     }
   }
 
-  .menu-btn-sidebar, .menu-toc-btn {
+  .menu-btn-sidebar,
+  .menu-toc-btn {
     display: none;
   }
 }
 
 @media (max-width: $MQMobile) {
+  .side-btn{
+    display: block;
+  }
   .menu-btn-container.open {
     .menu-btn-sidebar,
     .menu-toc-btn {

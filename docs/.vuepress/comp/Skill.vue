@@ -1,5 +1,5 @@
 <template>
-  <div class="links-wrapper">
+  <div class="skill-wrapper">
     <div class="skill-group">
       <div class="skill-item" v-for="item in skills">
         <div class="content">

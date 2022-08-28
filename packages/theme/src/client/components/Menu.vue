@@ -1,4 +1,5 @@
 <template>
+  <ToggleSidebarButton class="side-btn" @toggle="$emit('toggle-sidebar')" />
   <div class="menu-btn-container" :class="{ open: state.isMenuOpen }">
     <div class="menu-btn-wrapper">
       <div class="menu-btn" @click="toggleMenu">
@@ -39,11 +40,6 @@
         >
           <VIcon name="fa-list-ul" />
         </div>
-
-        <ToggleSidebarButton
-          class="menu-btn-child menu-btn-sidebar"
-          @toggle="$emit('toggle-sidebar')"
-        />
       </div>
     </div>
   </div>
