@@ -2,7 +2,7 @@
 layout: Post
 title: Dockerfile-nginx
 subtitle: Dockerfile-nginx
-author: HaoDai
+author: 浩呆
 date: 2022-08-20
 useHeaderImage: true
 headerImage: /img/in-post/linux.webp

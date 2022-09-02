@@ -7,7 +7,11 @@
 
     <!-- search button -->
     <div v-if="shouldShowSearchPage" class="navbar-item">
-      <a style="cursor: pointer" @click="$emit('toggle-search')">
+      <a
+        style="cursor: pointer"
+        rel="noopener noreferrer"
+        @click="$emit('toggle-search')"
+      >
         <span v-if="themeLocale.searchIcon" class="nav-icon">
           <VIcon :name="themeLocale.searchIcon" />
         </span>

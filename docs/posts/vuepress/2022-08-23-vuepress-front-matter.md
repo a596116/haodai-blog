@@ -2,7 +2,7 @@
 layout: Post
 title: VuePress Front Matter
 subtitle: Vuepress Front Matter
-author: HaoDai
+author: 浩呆
 date: 2022-08-23
 useHeaderImage: false
 headerImage: /img/in-post/vuepress.jpeg

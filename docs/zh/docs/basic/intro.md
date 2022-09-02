@@ -6,16 +6,16 @@ date: 2020-10-18
 [Gungnir v2](https://github.com/Renovamen/vuepress-theme-gungnir/tree/v2) 是一个基于 [Vuepress 2](https://v2.vuepress.vuejs.org/) 的博客主题。
 
 <p>
-  <a href="https://www.npmjs.com/package/vuepress-theme-gungnir/v/next" target="_blank">
+  <a href="https://www.npmjs.com/package/vuepress-theme-gungnir/v/next" target="_blank" rel="nofollow">
     <img src="https://img.shields.io/npm/v/vuepress-theme-gungnir/next.svg?style=flat-square&logo=npm" style="display: inline; margin: 0 4px 0 0" alt="npm">
   </a>
-  <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">
+  <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank" rel="nofollow">
     <img src="https://img.shields.io/badge/GitHub-Gungnir-26A2FF?style=flat-square&logo=github" style="display: inline; margin: 0 4px 0 0" alt="github">
   </a>
-  <a href="https://github.com/Renovamen/renovamen.github.io/blob/master/LICENSE" target="_blank">
+  <a href="https://github.com/Renovamen/renovamen.github.io/blob/master/LICENSE" target="_blank" rel="nofollow">
     <img src="https://img.shields.io/badge/License-Apache--2.0-green?style=flat-square" style="display: inline; margin: 0 4px 0 0" alt="license">
   </a>
-  <a href="https://github.com/vuepress/awesome-vuepress/blob/main/v2.md#themes" target="_blank">
+  <a href="https://github.com/vuepress/awesome-vuepress/blob/main/v2.md#themes" target="_blank" rel="nofollow">
     <img src="https://cdn.jsdelivr.net/gh/sindresorhus/awesome@a7b5b7805ecc00b3396acb35022cf6e2c0699e03/media/badge-flat.svg" style="display: inline; margin: 0 4px 0 0" alt="license">
   </a>
 </p>

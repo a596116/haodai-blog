@@ -7,19 +7,25 @@
         <section class="info">
           <div class="line">
             <VIcon name="hi-solid-mail" class="icon" />
-            <a href="mailto:a596116@gmail.com" target="_blank"
+            <a href="mailto:a596116@gmail.com" target="_blank" rel="nofollow"
               >a596116@gmail.com</a
             >
           </div>
           <div class="line">
             <VIcon name="bi-phone-fill" class="icon" />
-            <a href="tel:0988640301" target="_blank">0988640301</a>
+            <a href="tel:0988640301" target="_blank" rel="nofollow"
+              >0988640301</a
+            >
           </div>
           <div class="links">
-            <a href="https://line.me/ti/p/YXi16BOO8V" target="_blank">
+            <a
+              href="https://line.me/ti/p/YXi16BOO8V"
+              target="_blank"
+              rel="nofollow"
+            >
               <VIcon name="bi-line" class="icon" height="30px" width="30px" />
             </a>
-            <a href="https://github.com/a596116" target="_blank">
+            <a href="https://github.com/a596116" target="_blank" rel="nofollow">
               <VIcon name="bi-github" class="icon" height="30px" width="30px" />
             </a>
           </div>

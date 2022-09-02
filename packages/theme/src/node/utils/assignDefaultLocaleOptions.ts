@@ -2,14 +2,14 @@ import type {
   GungnirThemeData,
   GungnirThemeI18n,
   GungnirThemeLocaleOptions
-} from "../../shared";
-import { en } from "../i18n";
+} from "../../shared"
+import { en } from "../i18n"
 
 const deleteSelectLanguageName = (options: GungnirThemeI18n) => {
-  const newOptions = { ...options };
-  delete newOptions.selectLanguageName;
-  return newOptions;
-};
+  const newOptions = { ...options }
+  delete newOptions.selectLanguageName
+  return newOptions
+}
 
 export const DEFAULT_LOCALE_OPTIONS: GungnirThemeLocaleOptions = {
   // home page
@@ -22,7 +22,7 @@ export const DEFAULT_LOCALE_OPTIONS: GungnirThemeLocaleOptions = {
   catalog: true,
 
   // color mode
-  colorMode: "auto",
+  colorMode: "dark",
   colorModeSwitch: true,
 
   // search
@@ -51,12 +51,12 @@ export const DEFAULT_LOCALE_OPTIONS: GungnirThemeLocaleOptions = {
   `,
 
   ...deleteSelectLanguageName(en)
-};
+}
 
 export const DEFAULT_LOCALE_DATA: GungnirThemeData = {
   // navbar
   selectLanguageName: en.selectLanguageName
-};
+}
 
 /**
  * Assign default options
@@ -65,20 +65,20 @@ export const assignDefaultLocaleOptions = (
   localeOptions: GungnirThemeLocaleOptions
 ): void => {
   if (!localeOptions.locales) {
-    localeOptions.locales = {};
+    localeOptions.locales = {}
   }
 
   if (!localeOptions.locales["/"]) {
-    localeOptions.locales["/"] = {};
+    localeOptions.locales["/"] = {}
   }
 
   Object.assign(localeOptions, {
     ...DEFAULT_LOCALE_OPTIONS,
     ...localeOptions
-  });
+  })
 
   Object.assign(localeOptions.locales["/"], {
     ...DEFAULT_LOCALE_DATA,
     ...localeOptions.locales["/"]
-  });
-};
+  })
+}

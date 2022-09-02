@@ -185,10 +185,10 @@ module.exports = {
 module.exports = {
   theme: gungnirTheme({
     footer: `
-      &copy; <a href="https://github.com/Renovamen" target="_blank">Renovamen</a> 2018-2022
+      &copy; <a href="https://github.com/Renovamen" target="_blank" rel="nofollow">Renovamen</a> 2018-2022
       <br>
-      Powered by <a href="https://v2.vuepress.vuejs.org" target="_blank">VuePress</a> &
-      <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
+      Powered by <a href="https://v2.vuepress.vuejs.org" target="_blank" rel="nofollow">VuePress</a> &
+      <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank" rel="nofollow">Gungnir</a>
     `
   })
 }

@@ -74,6 +74,7 @@
     }
   },
   "dependencies": {
-    "@vuepress/plugin-register-components": "2.0.0-beta.49"
+    "@vuepress/plugin-register-components": "2.0.0-beta.49",
+    "vuepress-theme-gungnir": "^0.3.0"
   }
 }

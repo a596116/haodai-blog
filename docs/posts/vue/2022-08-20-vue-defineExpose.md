@@ -2,7 +2,7 @@
 layout: Post
 title: 父組件執行子組件,獲取子組屬性defineExpose
 subtitle: 父組件執行子組件,獲取子組屬性defineExpose
-author: HaoDai
+author: 浩呆
 date: 2022-08-20
 useHeaderImage: false
 headerImage: /img/in-post/vue.jpg

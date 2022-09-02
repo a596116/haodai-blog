@@ -2,7 +2,7 @@
 layout: Post
 title: Markdown 語法示例
 subtitle: Vuepress Markdown
-author: HaoDai
+author: 浩呆
 date: 2022-08-22
 useHeaderImage: false
 headerImage: /img/in-post/vuepress.jpeg

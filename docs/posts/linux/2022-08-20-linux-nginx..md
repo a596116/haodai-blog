@@ -2,7 +2,7 @@
 layout: Post
 title: 安装和配置 Nginx
 subtitle: 安装和配置 Nginx
-author: HaoDai
+author: 浩呆
 date: 2022-08-20
 useHeaderImage: true
 headerImage: /img/in-post/linux.webp

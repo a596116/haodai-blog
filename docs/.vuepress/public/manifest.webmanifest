@@ -1,7 +1,7 @@
 {
-  "name": "HaoDai Blog",
-  "short_name": "HaoDai",
-  "description": "HaoDai's Blog",
+  "name": "浩呆博客",
+  "short_name": "浩呆",
+  "description": "浩呆博客",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#2d3746",

@@ -2,7 +2,7 @@
 layout: Post
 title: 從0開始學Linux
 subtitle: 從0開始學Linux
-author: HaoDai
+author: 浩呆
 date: 2022-08-20
 useHeaderImage: true
 headerImage: https://upload.cc/i1/2022/08/23/OQ4E1H.jpg

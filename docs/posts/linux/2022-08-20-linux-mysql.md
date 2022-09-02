@@ -2,7 +2,7 @@
 layout: Post
 title: 安裝MySQL
 subtitle: 安裝MySQL
-author: HaoDai
+author: 浩呆
 date: 2022-08-20
 useHeaderImage: true
 headerImage: /img/in-post/linux.webp

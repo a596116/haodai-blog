@@ -5,6 +5,7 @@ import { defineUserConfig } from "vuepress"
 import { gungnirTheme, i18n } from "vuepress-theme-gungnir"
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import { navbar, sidebar } from "./configs"
+import { sitemapPlugin } from "vuepress-plugin-sitemap2"
 
 const isProd = process.env.NODE_ENV === "production"
 
@@ -12,27 +13,12 @@ export default defineUserConfig({
   base: "/",
 
   head: [
-    [
-      "link",
-      {
-        rel: "icon",
-        type: "image/png",
-        sizes: "16x16",
-        href: `/img/logo.png`
-      }
-    ],
-    [
-      "link",
-      {
-        rel: "icon",
-        type: "image/png",
-        sizes: "32x32",
-        href: `/img/logo.png`
-      }
-    ],
+    ["link", { rel: "icon", type: "image/png", sizes: "16x16", href: `/img/logo.png` }],
+    ["link", { rel: "icon", type: "image/png", sizes: "32x32", href: `/img/logo.png` }],
+    ["link", { rel: "apple-touch-icon", type: "image/png", sizes: "32x32", href: `/img/logo.png` }],
     ["link", { rel: "manifest", href: "/manifest.webmanifest" }],
-    ["meta", { name: "application-name", content: "HaoDai Blog" }],
-    ["meta", { name: "apple-mobile-web-app-title", content: "HaoDai Blog" }],
+    ["meta", { name: "application-name", content: "浩呆博客" }],
+    ["meta", { name: "apple-mobile-web-app-title", content: "浩呆博客" }],
     [
       "meta",
       { name: "apple-mobile-web-app-status-bar-style", content: "black" }
@@ -42,7 +28,9 @@ export default defineUserConfig({
       { rel: "apple-touch-icon", href: `/img/logo.png` }
     ],
     ["meta", { name: "theme-color", content: "#377bb5" }],
-    ["meta", { name: "msapplication-TileColor", content: "#377bb5" }]
+    ["meta", { name: "msapplication-TileColor", content: "#377bb5" }],
+    ["meta", { httpEquiv: "X-UA-Compatible", content: "IE=edge" }],
+    ["meta", { name: "viewport", content: "width=device-width, initial-scale=1" }],
   ],
 
   // site-level locales config
@@ -65,7 +53,7 @@ export default defineUserConfig({
 
   // configure default theme
   theme: gungnirTheme({
-    repo: "HaoDai",
+    repo: "浩呆",
     docsDir: "docs",
     editLink: false,
     blogNumPerPage: 10,
@@ -86,7 +74,7 @@ export default defineUserConfig({
     },
 
     personalInfo: {
-      name: "HaoDai",
+      name: "浩呆",
       avatar: "/img/logo.png",
       description: "Haodai's blog",
       sns: {
@@ -153,13 +141,16 @@ export default defineUserConfig({
       pwa: true,
     },
     footer: `
-                &copy; <a href="https://github.com/a596116" target="_blank">HaoDai</a> 2022
+                &copy; <a href="https://github.com/a596116" target="_blank" rel="nofollow">HaoDai</a> 2022
                 `
   }),
 
   markdown: {
     headers: {
       level: [2, 3, 4, 5]
+    },
+    links: {
+      externalAttrs: { target: '_blank', rel: 'nofollow noopener noreferrer' }
     }
   },
 
@@ -217,6 +208,9 @@ export default defineUserConfig({
         'Resume': '../../comp/Resume.vue',
         'Skill': '../../comp/Skill.vue',
       }
+    }),
+    sitemapPlugin({
+      hostname: 'https://wanghaodai.com'
     }),
   ]
 })

@@ -2,7 +2,7 @@
 layout: Post
 title: 不能不會的Mysql
 subtitle: 不能不會的Mysql
-author: HaoDai
+author: 浩呆
 date: 2022-08-20
 useHeaderImage: true
 headerImage: https://miro.medium.com/max/900/1*TTM5AleQfFJ-mItttJROdg.jpeg

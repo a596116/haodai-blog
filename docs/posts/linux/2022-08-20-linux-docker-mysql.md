@@ -2,7 +2,7 @@
 layout: Post
 title: docker-mysql
 subtitle: docker-mysql
-author: HaoDai
+author: 浩呆
 date: 2022-08-20
 useHeaderImage: true
 headerImage: /img/in-post/linux.webp
@@ -12,7 +12,7 @@ tags:
 ---
 ## 創建容器
 ```bash
-docker run -itd --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mahaodai/mysql --default-authentication-plugin=mysql_native_password
+docker run -itd --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 haodai/mysql --default-authentication-plugin=mysql_native_password
 ```
 
 **或**
