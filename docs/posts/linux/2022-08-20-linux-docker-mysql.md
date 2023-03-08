@@ -5,10 +5,10 @@ subtitle: docker-mysql
 author: 浩呆
 date: 2022-08-20
 useHeaderImage: true
-headerImage: /img/in-post/linux.webp
+headerImage: https://miro.medium.com/v2/resize:fit:900/1*TTM5AleQfFJ-mItttJROdg.jpeg
 headerMask: rgba(40, 57, 101, .4)
 tags: 
-  - linux
+  - docker
 ---
 ## 創建容器
 ```bash

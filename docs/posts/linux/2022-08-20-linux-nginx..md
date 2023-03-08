@@ -5,7 +5,7 @@ subtitle: 安装和配置 Nginx
 author: 浩呆
 date: 2022-08-20
 useHeaderImage: true
-headerImage: /img/in-post/linux.webp
+headerImage: https://fromideatocreation.com/wp-content/uploads/2022/05/1_SlKVDwLV1aunwZIriepTYg.png
 headerMask: rgba(40, 57, 101, .4)
 tags: 
   - linux

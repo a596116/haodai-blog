@@ -87,6 +87,7 @@ export default defineUserConfig({
       }
     },
 
+
     homeHeaderImages: [
       {
         path: "/img/home-bg/1.jpg",

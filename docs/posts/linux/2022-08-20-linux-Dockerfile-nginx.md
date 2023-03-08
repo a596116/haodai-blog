@@ -5,10 +5,10 @@ subtitle: Dockerfile-nginx
 author: 浩呆
 date: 2022-08-20
 useHeaderImage: true
-headerImage: /img/in-post/linux.webp
+headerImage: https://fromideatocreation.com/wp-content/uploads/2022/05/1_SlKVDwLV1aunwZIriepTYg.png
 headerMask: rgba(40, 57, 101, .4)
 tags: 
-  - linux
+  - docker
 ---
 ## Dockerfile
 
@@ -95,4 +95,10 @@ docker build -t web . --no-cache
 
 ```bash
 docker run -itd --name web -p 80:80 -p 443:443 -v /home/haodai/dist:/usr/share/nginx/html web
+```
+
+## 修改 nginx.conf 配置需重啟
+
+```bash
+docker exec web bash -c "nginx -s reload"
 ```

@@ -5,7 +5,7 @@ subtitle: 安裝 Docker
 author: 浩呆
 date: 2022-08-20
 useHeaderImage: true
-headerImage: /img/in-post/linux.webp
+headerImage: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Docker_%28container_engine%29_logo.svg/2560px-Docker_%28container_engine%29_logo.svg.png
 headerMask: rgba(40, 57, 101, .4)
 tags: 
   - linux
